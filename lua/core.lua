@@ -33,7 +33,7 @@ local function set_keymap()
 	]])
 
 	-- Supported by bufferline
-	map("n", keys.pick_tab, ":BufferLinePick<CR>", option)
+	map("n", keys.pick_tab, ":BufferLinePick<CR>", { noremap = true, silent = true, desc = "Pick Tabs" })
 
 	-- Supported by nvim-tree
 	map("n", keys.file_explorer, ":Neotree position=left source=filesystem action=show toggle=true<CR>", option)
@@ -121,10 +121,10 @@ local function set_keymap()
 		bottom_terminal_default:toggle()
 	end
 
-	map("n", keys.terminal_float, ":lua _float_term_toggle()<CR>", option)
-	map("t", keys.terminal_float, "<C-\\><C-n>:lua _float_term_toggle()<CR>", option)
-	map("n", keys.terminal_bottom, ":lua _bottom_term_toggle()<CR>", option)
-	map("t", keys.terminal_bottom, "<C-\\><C-n>:lua _bottom_term_toggle()<CR>", option)
+	map("n", keys.terminal_float, ":lua _float_term_toggle()<CR>", { noremap = true, silent = true, desc = "Open/Close float terminal" })
+	map("t", keys.terminal_float, "<C-\\><C-n>:lua _float_term_toggle()<CR>", { noremap = true, silent = true, desc = "Open/Close float terminal" })
+	map("n", keys.terminal_bottom, ":lua _bottom_term_toggle()<CR>", { noremap = true, silent = true, desc = "Open/Close bottom terminal" })
+	map("t", keys.terminal_bottom, "<C-\\><C-n>:lua _bottom_term_toggle()<CR>", { noremap = true, silent = true, desc = "Open/Close bottom terminal" })
 
 	vim.cmd([[
     command! Termfloat :lua _float_term_toggle()

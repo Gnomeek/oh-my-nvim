@@ -27,8 +27,8 @@ return {
 
 	-- View other usage of the plugin: https://github.com/akinsho/toggleterm.nvim
 	-- Use the shortcut to open or close the terminal.
-	terminal_float = "<A-u>", -- open terminal in a float window
-	terminal_bottom = "<A-b>", -- open terminal at the bottom
+	terminal_float = "<leader>tf", -- open terminal in a float window
+	terminal_bottom = "<leader>tb", -- open terminal at the bottom
 
 	-- View other usage of the plugin: https://github.com/Shatur/neovim-session-manager
 	-- Use the shortcut to switch a session.
@@ -36,10 +36,11 @@ return {
 
 	-- View other usage of the plugin: https://github.com/nvim-telescope/telescope.nvim
 	-- Use the shortcut to find, search files and find buffers.
-	find_files = "<leader>ff",
-	live_grep = "<leader>gg",
-	search_cursor = "<leader>cc",
-	find_buffer = "<leader>bb",
+	-- moved to which-key.lua
+	-- find_files = "<leader>ff",
+	-- live_grep = "<leader>gg",
+	-- search_cursor = "<leader>cc",
+	-- find_buffer = "<leader>bb",
 	-- Use the to close telescope window. <C-c> is the default setting, can't edit it here.
 	-- close_telescope  = "<C-c>",
 
