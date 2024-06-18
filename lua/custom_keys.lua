@@ -65,7 +65,8 @@ return {
 	goto_impl = "gi",
 	-- goto_back           = "<C-o>",
 	-- Use the shortcut to rename the code symbols.
-	lsp_rename = "<leader>re",
+	lsp_rename = "<leader>lr",
 	-- Use the shortcut to format your codes.
-	format = "<leader>ft",
+	format = "<leader>lf",
+	code_action = "<leader>la",
 }

@@ -43,8 +43,8 @@ local function set_keymap()
 	map("n", keys.outline, ":AerialToggle! right<CR>", option)
 
 	-- Supported by diffview
-	map("n", keys.diff_open, ":DiffviewOpen<CR>", option)
-	map("n", keys.diff_close, ":DiffviewClose<CR>", option)
+	map("n", keys.diff_open, ":DiffviewOpen<CR>", { noremap = true, silent = true, desc = "Git Diff Open" })
+	map("n", keys.diff_close, ":DiffviewClose<CR>", { noremap = true, silent = true, desc = "Git Diff Close" })
 
 	-- Supported by toggleterm
 	-- float terminal
@@ -132,7 +132,7 @@ local function set_keymap()
 	vim.cmd([[cnoreabbrev terminal Termfloat]])
 
 	-- Supported by nvim-session-manager
-	map("n", keys.switch_session, ":SessionManager load_session<CR>", option)
+	map("n", keys.switch_session, ":SessionManager load_session<CR>", { noremap = true, silent = true, desc = "Switch Session" })
 end
 
 -- Set up transparency

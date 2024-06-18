@@ -40,6 +40,28 @@ return {
                 -- f = { "see core.lua", "Git Diff Open"},
             } 
           })
+          wk.register({
+            ["<leader>w"] = {
+                name = "+workspace",
+                -- a = { "see lspconfig", "Add Workspace Folder"},
+                -- r = { "see lspconfig", "Remove Workspace Folder"},
+                -- l = { "see lspconfig", "List Workspace Folders"},
+            } 
+          })
+          wk.register({
+            ["<leader>l"] = {
+                name = "+lsp",
+                -- f = { "see custom_keys.lua", "Format"},
+                -- r = { "see custom_keys.lua", "Rename"},
+                -- a = { "see custom_keys.lua", "Code Action"},
+            } 
+          })
+          wk.register({
+            ["<leader>s"] = {
+                name = "+session",
+                -- s = { "see core.lua", "Switch Session"},
+            } 
+          })
         end,
         opts = {
 
